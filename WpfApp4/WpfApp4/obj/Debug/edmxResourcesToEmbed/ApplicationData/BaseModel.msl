@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Хранилище ProbaModelContainer" CdmEntityContainer="ProbaEntities">
+    <EntitySetMapping Name="Person">
+      <EntityTypeMapping TypeName="ProbaModel.Person">
+        <MappingFragment StoreEntitySet="Person">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="idrole" ColumnName="idrole" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="login" ColumnName="login" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Role">
+      <EntityTypeMapping TypeName="ProbaModel.Role">
+        <MappingFragment StoreEntitySet="Role">
+          <ScalarProperty Name="NameRole" ColumnName="NameRole" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
